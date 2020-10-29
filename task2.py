@@ -27,14 +27,13 @@ def get_letter_frequency():
         print(f'I/O error:: {error}')
 
 def create_write_file(alphabet_list):
-    count = 0
+    """Create and write the number of letters to the file"""
     try:
         with open(FILENAME2,MODE_W) as names_file2:
-            for word in sorted(dictionary_list):
-                names_file2.write(f'{word} {str(dictionary_list[word])}\n')
-                count = count + 1
+            for word in sorted(alphabet_list):
+                names_file2.write(f'{word} {str(alphabet_list[word])}\n')     
 
-            if count == 26:
+            if len(alphabet_list) == 26:
                 names_file2.write('It has all letters')
             else:
                 names_file2.write("It doesn't have all letters")

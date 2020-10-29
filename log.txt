@@ -1,0 +1,9 @@
+Bad score value for Alice, ignored
+Bad score value for Bob, ignored
+Cindy 89
+Karthik 20
+Lalitha 56
+Bad score value for jhfgbjhdsfgnsgnjskj, ignored
+abc 123
+edfd 567
+The class average is 171.0 for 5 students

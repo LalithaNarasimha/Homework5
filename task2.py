@@ -31,7 +31,7 @@ def create_write_file(alphabet_list):
     try:
         with open(FILENAME2,MODE_W) as names_file2:
             for word in sorted(alphabet_list):
-                names_file2.write(f'{word} {str(alphabet_list[word])}\n')     
+                names_file2.write(f'{word} {alphabet_list[word]}\n')     
 
             if len(alphabet_list) == 26:
                 names_file2.write('It has all letters')
